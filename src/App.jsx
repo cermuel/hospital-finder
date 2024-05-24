@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import axios from "axios";
 export default function App() {
   useEffect(async () => {
     const test = await axios.get(import.meta.env.VITE_APP_BASE_URL);
